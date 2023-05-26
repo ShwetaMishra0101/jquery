@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> jquery selectors</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+    <h1>jQuery selectors</h1>
+    <div class="container"></div>
+    <h1 id="heading"> heading one</h1>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ipsa, a molestiae? Ad totam perspiciatis eaque ea, non corporis provident ipsum necessitatibus libero
+        maiores veniam voluptates distinctio, obcaecati esse. Impedit, quibusdam.</p>
+    <h1 class="heading2"> heading two</h1>
+    <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ipsa, a molestiae? Ad totam perspiciatis eaque ea, non corporis provident ipsum necessitatibus libero
+        maiores veniam voluptates distinctio,<span>hjagegeyryet</span> obcaecati esse. Impedit, quibusdam.</p>
+<span> span </span>
+<ul id="list">
+   <li>list item</li>
+   <li>list item</li>
+   <li>list item</li>
+   <li>list item</li>
+   <li>list item</li>
+   <li>list item</li>
+   <li>list item</li>
+   <li>list item</li>
+   <li>list item</li>
+</ul>
+
+</body>
+
+</html>
+<script>
+    // hide all the heading 
+    // $('h1').hide()
+
+    // hide only those heading which id is match 
+    // $('h1#heading').hide()
+
+    // search Element which is presend in p tag
+
+    // $('p span').css('color','red')
+
+    // grap the first item and last item
+
+    $('ul#list li:first' ).css('color','red')
+
+    // even odd 
+    $('ul#list li:even').css('background',"teal")
+
+    // nth child 
+
+    $('ul#list li:nth-child(3n)').css('list-style','none')
+
+
+
+
+
+</script>
