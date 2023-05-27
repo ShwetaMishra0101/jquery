@@ -10,12 +10,13 @@
 </head>
 <body>
 
-    <button id="btn1">btn1</button>
+    <button id="btn1" class="btnclass">btn1</button>
     <button id="btn2">btn2</button>
     <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
          Ipsum modi ad odit adipisci laboriosam neque recusandae esse doloremque haru
          m reiciendis hic,perferendis similique quos iusto temporibus. Temporibus ipsum
          ex esse!</p>
+         <h1 class="coords"></h1>
     
 </body>
 </html>
@@ -23,52 +24,114 @@
 
     $(document).ready(function(){
         // show the alert onclick the button
-        $('#btn1').click(function(){
-            alert('button clicked')
-        })
+        // $('#btn1').click(function(){
+        //     alert('button clicked')
+        // })
 
-        // also we can write this and it will save couple of sec 
+        // // also we can write this and it will save couple of sec 
 
-        $("#btn2").on('click',function(){
-            alert('button clicked')
-        })
+        // $("#btn2").on('click',function(){
+        //     alert('button clicked')
+        // })
 
-        // hide the value of the p tag on click btn1 
+        // // hide the value of the p tag on click btn1 
 
-        $("#btn1").click(function(){
-            $('.para1').hide()
-        })
+        // $("#btn1").click(function(){
+        //     $('.para1').hide()
+        // })
 
-        // show the value of the p tag on click btn1 
+        // // show the value of the p tag on click btn1 
 
-        $("#btn2").click(function(){
-            $('.para1').show()
-        })
+        // $("#btn2").click(function(){
+        //     $('.para1').show()
+        // })
 
-        // if we want to show and hide on click the btn the we simply need use toggle 
+        // // if we want to show and hide on click the btn the we simply need use toggle 
 
-        $("#btn1").click(function(){
-            $('.para1').toggle()
-        })
+        // $("#btn1").click(function(){
+        //     $('.para1').toggle()
+        // })
 
-        // dubble click
+        // // dubble click
 
-        $("#btn2").dblclick(function(){
-            $('.para1').toggle()
-        })
+        // $("#btn2").dblclick(function(){
+        //     $('.para1').toggle()
+        // })
 
-        $('#btn1').on('mouseenter',function(){
-            $('.para1').toggle()
-        })
+        // $('#btn1').on('mouseenter',function(){
+        //     $('.para1').toggle()
+        // })
 
-        $('#btn1').on('mouseremove',function(){
-            $('.para1').toggle()
-        })
+        // $('#btn1').on('mouseremove',function(){
+        //     $('.para1').toggle()
+        // })
 
-        // the sort hand of MouseEnter and mouseleave is hover
+        // $('#btn1').on('mouseup',function(){
+        //     $('.para1').toggle()
+        // })
+        // // the sort hand of MouseEnter and mouseleave is hover
         
-        $('#btn1').hover(function(){
-            $('.para1').toggle()
+        // $('#btn1').hover(function(){
+        //     $('.para1').toggle()
+        // })
+
+
+        // event 
+
+        // $('#btn1').click(function(e){
+        //     console.log(e)
+        // })
+
+        // get the id of the tag
+
+        // $('#btn1').click(function(e){
+        //     alert(e.currentTarget.id);
+        // })
+
+        // // get the innerHTML 
+
+        // $('#btn2').click(function(e){
+        //     alert(e.currentTarget.innerHTML)
+        // })
+
+        // $('#btn1').click(function(e){
+            // alert(e.currentTarget.outerHTML)
+            // alert(e.currentTarget.tagName)
+            // alert(e.currentTarget.className)
+            // alert(e.currentTarget.textContent)
+            // alert(e.currentTarget.toggleAttribute)
+
+            // give the clinte height
+            // alert(e.currentTarget.clientHeight)
+
+            // clientLeft property is used to retrieve the width of the left border of an element, including any padding.
+
+            // alert(e.currentTarget.clientLeft)
+        // })
+
+
+            // coords
+            // the term "coords" is commonly used to refer to the coordinates of an element, typically 
+            // associated with mouse events such as click, mouseover, or mousemove.
+            // The event object usually has properties like pageX, pageY, clientX, clientY, offsetX, offsetY, etc.
+
+        // $("#btn1").on('mousemove', function(e){
+        //     console.log('coords Y: '+ e.clientY + "coords X: "+ e.clientX)
+        // })
+
+
+        // append
+
+        // $(document).on('mousemove', function(e){
+
+        //     $('.coords').append('coords Y: '+ e.clientY + "coords X: "+ e.clientX)
+
+        // })
+        
+        // append last Element
+
+        $(document).on('mousemove',function(e){
+            $('.coords').html('coords Y: '+ e.clientY + "coords X: "+ e.clientX)
         })
 
 
