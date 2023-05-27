@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
+</head>
+<body>
+
+    <button id="btn1">btn1</button>
+    <button id="btn2">btn2</button>
+    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Ipsum modi ad odit adipisci laboriosam neque recusandae esse doloremque haru
+         m reiciendis hic,perferendis similique quos iusto temporibus. Temporibus ipsum
+         ex esse!</p>
+    
+</body>
+</html>
+<script>
+
+    $(document).ready(function(){
+        // show the alert onclick the button
+        $('#btn1').click(function(){
+            alert('button clicked')
+        })
+
+        // also we can write this and it will save couple of sec 
+
+        $("#btn2").on('click',function(){
+            alert('button clicked')
+        })
+
+        // hide the value of the p tag on click btn1 
+
+        $("#btn1").click(function(){
+            $('.para1').hide()
+        })
+
+        // show the value of the p tag on click btn1 
+
+        $("#btn2").click(function(){
+            $('.para1').show()
+        })
+
+        // if we want to show and hide on click the btn the we simply need use toggle 
+
+        $("#btn1").click(function(){
+            $('.para1').toggle()
+        })
+
+        // dubble click
+
+        $("#btn2").dblclick(function(){
+            $('.para1').toggle()
+        })
+
+        $('#btn1').on('mouseenter',function(){
+            $('.para1').toggle()
+        })
+
+        $('#btn1').on('mouseremove',function(){
+            $('.para1').toggle()
+        })
+
+        // the sort hand of MouseEnter and mouseleave is hover
+        
+        $('#btn1').hover(function(){
+            $('.para1').toggle()
+        })
+
+
+
+    })
+
+</script>
