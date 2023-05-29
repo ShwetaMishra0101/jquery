@@ -32,6 +32,8 @@
             <li>list item 2</li>
             <li>list item 3</li>
         </ul>
+        <a href="http://google.com">Google</a>
+        <input type="text"  id="newitem">
     </div>
 
 </body>
@@ -73,9 +75,40 @@
         // // Adds content as the first child of the selected element(s)
 
         // $('ul').prepend('<li>list item prepend')
-            
+
+// $('.para1').appendTo('.para2')
+// $('.para2').prependTo('.para1')
 
 
+// before and affter
+
+// $('ul').before('<h1>HELLO</h1>')
+// $('ul').after('<h1>WORLD<h1>')
+    // empty() method only removes the child elements and content within the selected element(s).
+    //  It does not remove the element itself. If you want to remove
+    //  the element along with its content, you can use the remove() method instead
+
+    // $('ul').empty()
+    // $('ul').detach()
+
+    // $('a').attr('target',"_blank")
+//    alert($('a').attr('href'))
+//    $('a').removeAttr('target')
+
+//    $('p').wrap('<h1>')
+    // $('p').wrapAll('<h1>')
+
+    //  keyup  get the input val 
+
+    $('#newitem').keyup(function(e){
+        var code = e.which
+        if(code==13){
+            e.preventDefault();
+            $('ul').append('<li>'+ e.target.value + '</li>')
+        }
+    })
+
+ 
 
 
     });
