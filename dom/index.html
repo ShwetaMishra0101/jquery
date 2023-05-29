@@ -27,14 +27,17 @@
         <p class="para2">para2</p>
         <div id="mydiv"></div>
 
-        <ul>
+        <ul id="list">
             <li>list item 1</li>
             <li>list item 2</li>
             <li>list item 3</li>
         </ul>
         <a href="http://google.com">Google</a>
         <input type="text"  id="newitem">
+        <ul id="user"></ul>
+        <ul id="li"></ul>
     </div>
+
 
 </body>
 
@@ -109,7 +112,24 @@
     })
 
  
+// array
+/*
+var myArray = ['a','b','c','d'];
+$.map(myArray, function(item,index){
+    $('#user').append('<li>'+ index +"-" + item+'</li>')
+})
+// each
+var myArray = ['a','b','c','d'];
+$.each(myArray, function(i,item){
+    $('#user').append('<li>'+item+'</li>')
+})
+*/
 
+var newarr = $('ul#list li').toArray()
+$.each(newarr, function(i,item){
+    console.log(item.innerHTML)
+   
+})
 
     });
 </script>
