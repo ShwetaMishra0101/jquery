@@ -21,7 +21,7 @@
     <h1 class="coords"></h1>
     <hr>
 
-    <form action="">
+    <form id="form">
         <label for="">name</label>
         <input type="text" name="name" id="name">
         <br>
@@ -163,21 +163,43 @@
 
         // focus 
 
-        $('input').focus(function(){
-            // alert('input')
-            // $('input#name').css('background','pink')
-            // this is not valid so we can use this it will select all the input and give the css  
+        // $('input').focus(function(){
+        //     // alert('input')
+        //     // $('input#name').css('background','pink')
+        //     // this is not valid so we can use this it will select all the input and give the css  
 
-            $(this).css('background','pink')
+        //     $(this).css('background','pink')
+
+        // })
+
+        // // blur is the opposite of the focus 
+
+        // $('input').blur(function(){
+        //     $(this).css('background','teal')
+        // })
+
+        // keyUp
+
+        // $('input').keyup(function(e){
+        //     console.log(e.target.value)
+        // })
+
+        // // select event
+
+        // $('select#gender').change(function(e){
+        //     alert('changed')
+        // })
+
+        // submit event
+
+
+        $('form').submit(function(e){
+            e.preventDefault()
+            var name = $('input#name').val();
+            var email = $('input#email').val();
+            console.log(name,email)
 
         })
-
-        // blur is the opposite of the focus 
-
-        $('input').blur(function(){
-            $(this).css('background','teal')
-        })
-
 
 
     })
