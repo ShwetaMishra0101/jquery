@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <style>
+        .myclass{
+            color: white;
+            background-color: teal;
+            border: 1px solid black;
+            border-radius: 2px ;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="btn">button</button>
+        <p class="para1">para1</p>
+        <p class="para2">para2</p>
+        <div id="mydiv"></div>
+    </div>
+    
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+
+        // add multiple css
+        $('.para1').css('color','red')
+        $('.para1').css({'color':"white",'background':'black','width':"100px"})
+
+        // add the class  
+
+
+    })
+</script>
