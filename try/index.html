@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+<p>ksjdkl</p>
+<p id="para1">para1</p>
+<input type="text" name="" id="">
+    
+</body>
+</html>
+<script>
+
+$(document).ready(function(){
+    
+    // $('p').click(function(){
+    //     $(this).hide()
+    // })
+
+//   $('p').dblclick(function(){
+//     $(this).hide()
+//   })
+// $('#para1').mouseenter(function(){
+//     alert("para1")
+// })
+// $('#para1').mouseleave(function(){
+//     alert('bye now you leave para1')
+// })
+
+// $('#para1').mousedown(function(){
+//     alert('mouse down')
+// })
+// $("#para1").mouseup(function(){
+//     alert('mouseup')
+// })
+
+// $('#para1').hover(function(){
+//     alert('mouse enter')
+// },
+// function(){
+//     alert('mouse leave')
+// })
+
+// $('input').focus(function(){
+//     $(this).css('background',"red")
+// })
+// $('input').blur(function(){
+//     $(this).css("background-color", "teal")
+// })
+
+// multiple event
+
+$('p').on({
+    mouseenter:function(){
+        $(this).css('background-color','red')
+    },
+    mouseleave:function(){
+        $(this).css('background-color','teal')
+    },
+    click:function(){
+        $(this).css("background-color","yellow")
+    }
+    
+})
+})
+</script>
