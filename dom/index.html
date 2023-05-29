@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,75 @@
     <title>DOM</title>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <style>
-        .myclass{
+        .myclass {
             color: white;
             background-color: teal;
             border: 1px solid black;
-            border-radius: 2px ;
+            border-radius: 5px;
+            width: 100px;
+            text-align: center;
 
         }
     </style>
 </head>
+
 <body>
     <div id="container">
         <button id="btn">button</button>
         <p class="para1">para1</p>
         <p class="para2">para2</p>
         <div id="mydiv"></div>
+
+        <ul>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+        </ul>
     </div>
-    
+
 </body>
+
 </html>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
 
         // add multiple css
-        $('.para1').css('color','red')
-        $('.para1').css({'color':"white",'background':'black','width':"100px"})
+        // $('.para1').css('color','red')
+        // $('.para1').css({'color':"white",'background':'black','width':"100px"})
 
         // add the class  
 
+        // $('.para2').addClass('myclass')
+        // // ALSO WE HAVE REMOVE CLASS 
+        // $('.para2').removeClass('myclass')
 
-    })
+        // $('#btn').click(function(){
+        //     $('.para1').toggleClass('myclass')
+        // })
+
+        // adding and changing a content in DOM
+
+        // $('#mydiv').text("Hello World")
+
+        // we can  write or set the value html 
+
+        // $("#mydiv").html('<h2>Hello world</h2> <h1>hello</h1>')
+
+        // get the value 
+        // alert($('#mydiv').text())
+
+        // APPEND THE VALUE 
+        // Adds content as the last child of the selected element(s).
+        // $('ul').append('<li>list item append </li>')
+
+        // // prepend the value  
+        // // Adds content as the first child of the selected element(s)
+
+        // $('ul').prepend('<li>list item prepend')
+            
+
+
+
+
+    });
 </script>
