@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <style>
+        #animate{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn">animate</button>
+    <div id="animate"> hello </div>
+    
+</body>
+</html>
+
+<script>
+
+    $(document).ready(function(){
+
+        // $('button').click(function(){
+        //     $('div').animate({'left':"250px","opacity":"0.5"})
+        // })
+
+        // Relative value
+
+        // $('button').click(function(){
+        //     $('div').animate({
+        //         left:"250px",
+        //         height: "+=150px",
+        //         width:"+=150px"
+        //     })
+        // })
+
+        //  Pre-defined Values
+
+        // $('button').click(function(){
+        //     $('div').animate({
+        //         height:"toggle"
+        //     })
+        // })
+
+        // Queue Functionality
+
+        // $('button').click(function(){
+        //     var div = $('div')
+        //     div.animate({height:"300px",opacity: '0.4'},"slow");
+        //     div.animate({height:"300px",opacity: '0.8'},"slow");
+        //     div.animate({height:"300px",opacity: '0.4'},"slow")
+        //     div.animate({height:"300px",opacity: '0.8'},"slow")
+        // })
+
+        // increase font size
+
+       $("button").click(function(){
+        var div = $('div')
+        div.animate({left:"300px"}, "slow")
+        div.animate({fontSize:"50px"})
+       })
+
+   
+    })
+
+</script>
