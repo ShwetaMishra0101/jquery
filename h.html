@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main-div{
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .main-div-outer-box{
+        align-items: center;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 0px;
+            height: min-content;
+            justify-content: flex-start;
+            overflow: hidden;
+            padding: 0 0 32px;
+            position: relative;
+
+    }
+    .main-div-first-chid-main{
+        align-items: center;
+            background-color: #f4f4f4f4;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 32px;
+            height: min-content;
+            justify-content: flex-start;
+            overflow: hidden;
+            padding: 32px;
+            position: relative;
+            width: 100%;
+
+    }
+    .first-div-chid-1{
+        background-color: #fff;
+    border-radius: 32px;
+    flex: none;
+    height: 1000px;
+    max-width: 1332px;
+    overflow: hidden;
+    position: relative;
+    transform: perspective(1200px);
+    width: 100%;
+    will-change: transform;
+    }
+    .logo{
+        align-content: center;
+                align-items: center;
+                display: flex;
+                flex: none;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 48px;
+                height: min-content;
+                justify-content: flex-start;
+                left: 50%;
+                overflow: visible;
+                padding: 0;
+                position: absolute;
+                top: 64px;
+                transform: translate(-50%);
+                width: 578px
+
+    }
+    .img{
+        flex: none;
+                height: 48px;
+                overflow: hidden;
+                position: relative;
+                transform: perspective(1200px);
+                width: 48px
+    }
+    .heading-main-div{
+        align-content: center;
+                align-items: center;
+                display: flex;
+                flex: none;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 32px;
+                height: min-content;
+                justify-content: flex-start;
+                overflow: visible;
+                padding: 0;
+                position: relative;
+                width: 100%
+
+    }
+
+    .h1-main-child{ --framer-link-text-color: #0099ff;
+                --framer-link-text-decoration: underline;
+                --framer-paragraph-spacing: 0px;
+                flex: none;
+                height: auto;
+                max-width: 676px;
+                position: relative;
+                transform: perspective(1200px);
+                white-space: pre-wrap;
+                width: auto;
+                word-break: break-word;
+                word-wrap: break-word 
+    }
+    .h1{
+        font-family: "Mona-Sans Bold Wide", sans-serif;
+        font-size: 64px;
+        
+    /* font-size: 64px; */
+    /* font-style: normal; */
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 1.3em;
+    paragraph-spacing: 0px;
+    /* text-alignment: center; */
+   color: #000000;
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    justify-content: center;
+}
+
+
+ .p-tag {
+    font-family: "Mona-Sans SemiBold", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    text-transform: none;
+    latter-spacing: 0px;
+ }
+
+ 
+    
+    .btn-div{
+        align-content: center;
+                align-items: center;
+                display: flex;
+                flex: none;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 32px;
+                height: min-content;
+                justify-content: flex-start;
+                overflow: visible;
+                padding: 0;
+                position: relative;
+                width: 100%;
+                /* border: 1px solid red; */
+    }
+
+    .btn{
+        flex: none;
+        height: 68px;
+        /* width: 40%px; */
+        border: 1px solid black;
+        width: 40%;
+        border-radius: 50px;
+        background-color: #000000;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-div-second-chid-main{
+        align-content: center;
+                align-items: center;
+                background-color: #fff;
+                border-radius: 32px;
+                display: flex;
+                flex: none;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 0px;
+                height: min-content;
+                justify-content: center;
+                max-width: 1332px;
+                overflow: hidden;
+                padding: 128px;
+                position: relative;
+                width: 100%;
+                will-change: transform
+        
+    }
+
+
+    
+    
+
+</style>
+<body>
+
+    <div id="main-div"> 
+        <div style="display: contents;">
+            <div class="main-div-outer-box" style="min-height: 100%; width: auto;">
+                <div class="main-div-first-chid-main">
+
+                    <div class="first-div-chid-1">
+                        <div class="logo">
+                            <img class="img" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cpath%20d%3D%22M%2048%2012%20C%2048%208.688%2046.656%205.688%2044.484%203.516%20C%2042.312%201.344%2039.312%200%2036%200%20L%2012%200%20C%205.371%200%200%205.371%200%2012%20L%200%2036%20C%200%2042.629%205.371%2048%2012%2048%20L%2019.999%2048%20C%2026.628%2048%2031.999%2042.629%2031.999%2036%20C%2031.999%2035.772%2031.992%2035.544%2031.98%2035.321%20C%2036.653%2033.682%2040.001%2029.232%2040.001%2024%20C%2040.001%2023.772%2039.994%2023.544%2039.982%2023.321%20C%2044.654%2021.682%2048.002%2017.232%2048.002%2012%20Z%20M%2019.999%2043.999%20L%2012%2043.999%20C%207.589%2043.999%204.001%2040.411%204.001%2036%20C%204.001%2034.543%204.392%2033.175%205.076%2031.999%20C%206.456%2029.611%209.043%2027.998%2012%2027.998%20L%2019.999%2027.998%20C%2022.956%2027.998%2025.543%2029.611%2026.923%2031.999%20C%2027.607%2033.175%2027.998%2034.543%2027.998%2036%20C%2027.998%2040.411%2024.41%2043.999%2019.999%2043.999%20Z%20M%2031.075%2031.382%20C%2029.268%2027.043%2024.991%2023.998%2019.999%2023.998%20L%2012%2023.998%20C%208.928%2023.998%206.125%2025.154%204.001%2027.058%20L%204.001%2023.998%20C%204.001%2022.541%204.392%2021.173%205.076%2019.997%20C%206.456%2017.609%209.043%2015.996%2012%2015.996%20L%2028.001%2015.996%20C%2030.958%2015.996%2033.545%2017.609%2034.925%2019.997%20C%2035.609%2021.173%2036%2022.541%2036%2023.998%20C%2036%2027.322%2033.965%2030.173%2031.075%2031.382%20Z%20M%2039.074%2019.382%20C%2037.267%2015.043%2032.99%2011.998%2027.998%2011.998%20L%2012%2011.998%20C%208.928%2011.998%206.125%2013.154%204.001%2015.058%20L%204.001%2011.998%20C%204.001%207.586%207.589%203.998%2012%203.998%20L%2036%203.998%20C%2040.411%203.998%2043.999%207.586%2043.999%2011.998%20C%2043.999%2015.322%2041.964%2018.173%2039.074%2019.382%20Z%22%20fill%3D%22hsl(0%2C%200%25%2C%200%25)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" alt="">
+                        
+                            <div class="heading-main-div">
+                                <div class="h1-main-child" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; opacity: 1; flex-shrink: 0; transform: perspective(1200px);">
+                                    <h1 class="h1" style="--framer-text-alignment:center">L'abonnement Design illimité.</h1>
+                                </div>
+                                <div class="h1-main-child"  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; opacity: 1; flex-shrink: 0; transform: perspective(1200px);">
+                                    <p class="p-tag"  style="--framer-text-alignment:center" >Confiez tous vos projets product design, branding et growth à un top designer, en illimité et pour un prix mensuel fixe.</p>
+                                </div>
+                            </div>
+                            <div class="btn-div">
+                                <div class="btn" style="opacity: 1; transform: perspective(1200px);">
+                                    <div style="width: 100%;  height: 100%;">
+                                        <p class="framer-text framer-styles-preset-1qgzwam" data-styles-preset="t0mabe2Sa">Voir les offres</p>
+                                    </div>
+
+
+                                </div>
+                                <div class="framer-r9tamh"  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; opacity: 1; flex-shrink: 0; transform: perspective(1200px);" >
+                                    <p style=" padding-top: 10px; font-size:16px--font-selector:Q1VTVE9NO01vbmEtU2FucyBTZW1pQm9sZA==;--framer-font-family:&quot;Mona-Sans SemiBold&quot;, sans-serif;--framer-font-size:14px;--framer-line-height:1.6em;--framer-text-alignment:center" class="framer-text">14 jours d'essai gratuit</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="main-div-second-chid-main"></div>
+            </div>
+            
+        </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
