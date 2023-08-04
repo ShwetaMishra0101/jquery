@@ -32,3 +32,11 @@ function secondMaximum(a, b, c) {
     }
   }
   secondMaximum(1,2,3)
+
+  function myName() {
+    console.log("Name1");
+    return "Name2";
+    console.log("Name3")
+}
+
+console.log(myName())
