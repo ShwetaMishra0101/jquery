@@ -40,3 +40,6 @@ function secondMaximum(a, b, c) {
 }
 
 console.log(myName())
+//  nam1
+// name2
+
