@@ -38,7 +38,6 @@ function secondMaximum(a, b, c) {
     return "Name2";
     console.log("Name3")
 }
-
 console.log(myName())
 //  nam1
 // name2
