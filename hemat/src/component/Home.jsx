@@ -5,7 +5,7 @@ import styled from './home.module.css'
 const Home = () => {
     return <div className={styled.main_div}> 
 
-        {/* <div className={styled.infomation_div}> */}
+        <div className={styled.infomation_div}>
 
 <div className={styled.inner}>
 
@@ -16,7 +16,7 @@ to Brighten the Future</h1>
         </div>
     </div>
 </div>
-        {/* </div> */}
+        </div>
     </div>;
 }
 
