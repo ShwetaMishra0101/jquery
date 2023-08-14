@@ -6,7 +6,6 @@ const Home = () => {
     return <div className={styled.main_div}> 
 
         <div className={styled.infomation_div}>
-
 <div className={styled.inner}>
 
     <div className={styled.mid_aline}>
